@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CountdownTimer from "./components/CountdownTimer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center items-center h-screen bg-gray-800">
+      <CountdownTimer targetDate="2025-03-01T00:00:00" />
     </div>
   );
 }
